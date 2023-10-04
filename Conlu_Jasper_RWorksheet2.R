@@ -143,4 +143,25 @@ hotels_vienna
 # b. How many dimensions does  the data set have? - [1] 428  24
 dim(hotels_vienna)
 
-# c. 
+# c. Output -  "country"            "neighbourhood"      "price"     "stars"              "accommodation_type" "rating"        
+col <- colnames(hotels_vienna)
+col
+colnames1<-col[c(1,6,7,9, 22, 24)]
+colnames1
+
+# d. 
+save(hotels_vienna, file="new.RData")
+new<-load("new.RData")
+View(new)
+
+# e. 
+head(hotels_vienna, 6)
+#Output -
+#country city_actual rating_count center1label center2label
+#<chr>   <chr>       <chr>        <chr>        <chr>       
+ # 1 Austria Vienna      36           City centre  Donauturm   
+# 2 Austria Vienna      189          City centre  Donauturm   
+# 3 Austria Vienna      53           City centre  Donauturm   
+# 4 Austria Vienna      55           City centre  Donauturm   
+# 5 Austria Vienna      33           City centre  Donauturm   
+# 6 Austria Vienna      25           City centre  Donauturm   
