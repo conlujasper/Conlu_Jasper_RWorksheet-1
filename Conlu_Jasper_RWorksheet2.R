@@ -164,4 +164,217 @@ head(hotels_vienna, 6)
 # 3 Austria Vienna      53           City centre  Donauturm   
 # 4 Austria Vienna      55           City centre  Donauturm   
 # 5 Austria Vienna      33           City centre  Donauturm   
-# 6 Austria Vienna      25           City centre  Donauturm   
+# 6 Austria Vienna      25           City centre  Donauturm 
+
+#10. Create a list of 10 vegetables you ate during your lifetime. 
+#a. 
+vegetables<-list("potato","carrots","cabbage","squash","string beans","spinach","onion","cucumber","radish","eggplant")
+vegetables
+#[[1]]
+#[1] "potato"
+
+#[[2]]
+#[1] "carrots"
+
+#[[3]]
+#[1] "cabbage"
+
+#[[4]]
+#[1] "squash"
+
+#[[5]]
+#[1] "string beans"
+
+#[[6]]
+#[1] "spinach"
+
+#[[7]]
+#[1] "onion"
+
+#[[8]]
+#[1] "cucumber"
+
+#[[9]]
+#[1] "radish"
+
+#[[10]]
+#[1] "eggplant"
+
+#b. Add 2 additional vegetables after the last vegetables in the list.
+addVegetables<-c(vegetables, "corn","garlic")
+addVegetables
+#[[1]]
+#[1] "potato"
+
+#[[2]]
+#[1] "carrots"
+
+#[[3]]
+#[1] "cabbage"
+
+#[[4]]
+#[1] "squash"
+
+#[[5]]
+#[1] "string beans"
+
+#[[6]]
+#[1] "spinach"
+
+#[[7]]
+#[1] "onion"
+
+#[[8]]
+#[1] "cucumber"
+
+#[[9]]
+#[1] "radish"
+
+#[[10]]
+#[1] "eggplant"
+
+#[[11]]
+#[1] "corn"
+
+#[[12]]
+#[1] "garlic"
+
+#c. Add 4 additional vegetables after index 5.
+addVegetables4<-append(addVegetables, c ("ginger","malunggay","turnip","okra"),after=5)
+addVegetables4
+#[[1]]
+#[1] "potato"
+
+#[[2]]
+#[1] "carrots"
+
+#[[3]]
+#[1] "cabbage"
+
+#[[4]]
+#[1] "squash"
+
+#[[5]]
+#[1] "string beans"
+
+[[6]]
+[1] "spinach"
+
+[[7]]
+[1] "onion"
+
+[[8]]
+[1] "cucumber"
+
+[[9]]
+[1] "radish"
+
+[[10]]
+[1] "eggplant"
+
+[[11]]
+[1] "corn"
+
+[[12]]
+[1] "garlic"
+
+> #c. Add 4 additional vegetables after index 5.
+  > addVegetables4<-append(addVegetables, c ("ginger","malunggay","turnip","okra"),after=5)
+> addVegetables4
+#[[1]]
+#[1] "potato"
+
+#[[2]]
+#[1] "carrots"
+
+#[[3]]
+#[1] "cabbage"
+
+#[[4]]
+#[1] "squash"
+
+#[[5]]
+#[1] "string beans"
+
+#[[6]]
+#[1] "ginger"
+
+#[[7]]
+#[1] "malunggay"
+
+#[[8]]
+#[1] "turnip"
+
+#[[9]]
+#[1] "okra"
+
+#[[10]]
+#[1] "spinach"
+
+#[[11]]
+#[1] "onion"
+
+#[[12]]
+#[1] "cucumber"
+
+#[[13]]
+#[1] "radish"
+
+#[[14]]
+#[1] "eggplant"
+
+#[[15]]
+#[1] "corn"
+
+#[[16]]
+#[1] "garlic"
+num_vegetables<-length(addVegetables4)
+num_vegetables
+#16 data points
+
+#d.
+addVegetables5<-addVegetables4[-c(5,10,15)]
+addVegetables5
+
+#[[1]]
+#[1] "potato"
+
+#[[2]]
+#[1] "carrots"
+
+#[[3]]
+#[1] "cabbage"
+
+#[[4]]
+#[1] "squash"
+
+#[[5]]
+#[1] "ginger"
+
+#[[6]]
+#[1] "malunggay"
+
+#[[7]]
+#[1] "turnip"
+
+#[[8]]
+#[1] "okra"
+
+#[[9]]
+#[1] "onion"
+
+#[[10]]
+#[1] "cucumber"
+
+#[[11]]
+#[1] "radish"
+
+#[[12]]
+#[1] "eggplant"
+
+#[[13]]
+#[1] "garlic"
+
+num_addVegetables5<-length(addVegetables5)
+num_addVegetables5
+#13 data points
